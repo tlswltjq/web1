@@ -10,15 +10,34 @@
 
     <input id="nd" type="button" value="night"
       onclick="
-        if(document.querySelector('#nd').value === 'night'){
-          document.querySelector('body').style.backgroundColor = 'black';
-          document.querySelector('body').style.color = 'white';
-          document.querySelector('#nd').value ='day';
+
+      var list = document.querySelectorAll('a');
+
+
+
+        var target= document.querySelector('body');
+        if(this.value === 'night'){
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
+          this.value ='day';
+
+          var i=0 ;
+          while(i<list.length){
+            list[i].style.color = 'pink';
+            i++;
+          }
+
         }
         else{
-          document.querySelector('body').style.backgroundColor = 'white';
-          document.querySelector('body').style.color = 'black';
-          document.querySelector('#nd').value ='night';
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          this.value ='night';
+          var i=0 ;
+          while(i<list.length){
+            list[i].style.color = 'blue';
+            i++;
+          }
+
         }
       "
     >
