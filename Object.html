@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <script>
+    </script>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+      <script>
+        var coworkers = {
+          "person5" : "A",
+          "person4" : "AA",
+          "person3" : "AAAA",
+          "person2" : "AAAAAA",
+          "person1" : "AAAAAAAAAAA"
+        };
+        coworkers["umjunsik"]= "???";
+      </script>
+    <h2>Iterate</h2>
+      <script>
+      for(var key in coworkers){
+        document.write(coworkers[key]+'<br>');
+      }
+      </script>
+    <h2>Property & Method</h2>
+      <script>
+        coworkers.showAll = function(){
+          for(var key in this){
+            document.write(this[key]+'<br>');
+          }
+        }
+        coworkers.showAll();
+      </script>
+
+  </body>
+</html>
