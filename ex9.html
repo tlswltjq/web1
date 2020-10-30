@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <script>
+      var i = 0;
+      function wr(){
+        document.write('<li>'+i+'</li>');
+        i++;
+      }
+      function sum(a, b){
+        document.write('<div style= "color : red">'+a+b+'</div><br>');
+      }
+      function sum2(l, r){
+        return l+r;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+      <ul>
+        <script>
+        wr();
+        wr();
+        wr();
+        wr();
+        wr();
+        wr();
+        </script>
+      </ul>
+    <h2>Parameter & Argument</h2>
+      <script>
+      sum(2,"asdasd")
+      document.write(sum2(2,3)+'<br>');
+      document.write('<div style = "color:red">'+sum2(2,3)+'</div>');
+      document.write('<div style = "font-size:3rem;">'+sum2(2,3)+'</div>');
+      </script>
+    <h2>Return</h2>
+
+  </body>
+</html>
