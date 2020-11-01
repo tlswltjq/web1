@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>object</h1>
+    <h2>Create</h2>
+      <script>
+        var family = {
+          "papa" : "신동고",
+          "mama" : "정명복",
+          "sister" : "신지연",
+          "me" : "신지섭"
+        };
+
+        document.write("아빠는"+family.papa+"<br>");
+        document.write("엄마는"+family.mama+"<br>");
+        document.write("누나는"+family.sister+"<br>");
+        document.write("나는"+family.me+"<br>");
+
+        family.cat = "노랭이";             //cat 이나 papa, mama 등 객체에 속한 변수들은 프로퍼티!
+        document.write("고양이는"+family.cat+"<br>");
+        family["data scientist"]="김민수";
+        document.write("데이터사이언티스트  :"+family["data scientist"]);
+      </script>
+    <h2>Iterater</h2>
+      <script>
+      for (var key in family) {
+        document.write(key+family[key]+"<br>");
+      }
+      </script>
+    <h2>Property & Method</h2>
+      <script>
+        family.showAll = function(){  //객체에 함수를 넣을수 있따!!
+          for (var key in family) {
+            document.write(key+family[key]+"<br>");
+          }
+        }
+        family.showAll();     //객체에 포함된 함수는 메서드!
+      </script>
+  </body>
+</html>
