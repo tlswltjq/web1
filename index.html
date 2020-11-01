@@ -1,42 +1,16 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>WEB1  - html</title>
     <meta charset="utf-8">
+    <script src = "colors.js">
+
+    </script>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
 
-    <input id="nd" type="button" value="night"
-      onclick="
-
-      var list = document.querySelectorAll('a');
-      var target= document.querySelector('body');
-
-        if(this.value === 'night'){
-          target.style.backgroundColor = 'black';
-          target.style.color = 'white';
-          this.value ='day';
-
-          var i=0 ;
-          while(i<list.length){
-            list[i].style.color = 'pink';
-            i++;
-          }
-        }
-        else{
-          target.style.backgroundColor = 'white';
-          target.style.color = 'black';
-          this.value ='night';
-          var i=0 ;
-          while(i<list.length){
-            list[i].style.color = 'blue';
-            i++;
-          }
-
-        }
-    ">
+    <input id="nd" type="button" value="day" onclick="Body.ndHandler(this)">
 
     <ol>
       <li><a href="1.html">HTML</a></li>
